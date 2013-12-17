@@ -1,0 +1,23 @@
+.person
+  dl
+    dt
+      | First Name
+    dd
+      = person.name_first
+    dt
+      | Last Name
+    dd
+      = person.name_last
+    dt
+      | Middle Name
+    dd
+      = person.name_middle
+    dt
+      | Profile
+    dd
+      dl
+        - person.profile.each do |key, attr|
+          dt
+            = key
+          dd
+            = attr

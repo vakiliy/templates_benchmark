@@ -1,0 +1,19 @@
+<div class="person">
+  <dl>
+    <dt>First Name</dt>
+    <dd><%= person.name_first %></dd>
+    <dt>Last Name</dt>
+    <dd><%= person.name_last %></dd>
+    <dt>Middle Name</dt>
+    <dd><%= person.name_middle %></dd>
+    <dt>Profile</dt>
+    <dd>
+      <dl>
+        <% person.profile.each do |key, attr| %>
+            <dt><%= key %></dt>
+            <dd><%= attr %></dd>
+        <% end %>
+      </dl>
+    </dd>
+  </dl>
+</div>

@@ -29,7 +29,7 @@ module XmlHelper
           xml.root = build_node_libxml(@table, 'item')
           source ? xml.root : xml.root.to_s
         else
-          builder = ::Nokogiri::XML::Builder.new() do |xml|
+          builder = ::Nokogiri::XML::Builder.new do |xml|
             xml.item do
               build_node_nokogiri(@table, xml)
             end

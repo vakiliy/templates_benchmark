@@ -7,23 +7,22 @@ Compare perfomance ruby template engine:
 
 Notice:
   Benchmark 1 call render template every time.
-
+  
   Benchmark 2 call pre render template.
 
   XSLT render includes: object -> xml conversation and XML+XSLT -> HTML transformation
 
 
 For use:
-  1.   git clone https://github.com/samid/templates_benchmark.git
-  2.   vi .ruby-version && vi .ruby-gemset
+  1.   git clone https://github.com/vakiliy/templates_benchmark.git
+  2.   vim .ruby-version && vim .ruby-gemset
   3.   bundle install
-  4.   chmod +x benchmark_compare.rb
-  5.   ./benchmark_compare.rb
+  4.   sh benchmark.rb
 
 Customize template:
-  *   vi person.erb
+  *   vim person.erb
   *   rm person.haml person.slim (auto generated from person.erb)
-  *   vi person.xslt
+  *   vim person.xslt
 
 
 

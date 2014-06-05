@@ -24,6 +24,5 @@ Customize template:
   *   rm person.haml person.slim (auto generated from person.erb)
   *   vim person.xslt
 
-
-
+License: http://vakiliy.mit-license.org/
 

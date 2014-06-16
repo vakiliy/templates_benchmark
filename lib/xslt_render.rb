@@ -18,7 +18,6 @@ module XsltRender
     def render_nokogiri(data)
       xml = Nokogiri::XML(data)
       xslt = Nokogiri::XSLT(@template)
-      #xslt.transform(xml)
       xslt.transform(xml)
     end
 
